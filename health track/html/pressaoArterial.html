@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>Aplicativo health track fiap</title>
+        <meta charset="utf-8">   
+        <!-- guarda o formato de caracteres utf-8 universal-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--responsividade, controla a exibição em dispositivos com telas diferentes-->
+
+        <meta http-equiv="refresh" content="180">
+        <!--tempo para recarregar a página automáticamente, está com 180 segundos-->  
+
+        <meta name="keywords" content="emagrecimento, peso, alimentção">
+        <!--palavas chave para google e buscadores-->
+
+        <!--<script type="text/javascript" src="../js/scripts.js"> </script>-->
+        <!--arquivo JS separado, boas práticas SEO-->
+        
+        <link rel="stylesheet" type="text/css" href="..\Bootstrap\bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="../css/Estilos.css">
+
+    </head>
+
+    <body>
+        <div class="jumbotron" >
+            <div class="container-fluid">
+                <H1 class ="text-center">Health track</H1>
+                <h4 class ="text-center"> O seu amigo no controle de peso</h4> 
+            </div>  
+        </div>  
+
+        <section class="container-fluid row">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">                
+                <nav class="navbar navbar-inverse">
+                    <div class="navbar-header">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Cadastro.html">Cadastro <span class="sr-only"></span></a></li>
+                            <li><a href="Peso.html">Peso <span class="sr-only"></span></a></li>
+                            <li><a href="Alimentacao.html">Alimentação <span class="sr-only">(current)</span></a></li>
+                            <li><a href="atividadeFisica.html">Atividade física<span class="sr-only"></span></a></li>
+                            <li class="active"><a href="#">Pressão arterial <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+                </nav>        
+            </div>
+        </section> 
+
+        <section class="container-fluid">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">
+                <label> Aferição: </label> 
+                
+                <form class="form-inline" id="formAdicionaPressao">
+                  <div class="form-group">
+                      <div class="input-group">
+                      <input type="datetime-local" name="dt_pressao" class="form-control">
+                      </div>    
+                  </div>
+
+                  <div class="input-group">
+                    <input type="text" name="nr_Pressao" class="form-control" id="Inserir_pressao" placeholder="Ex.: 12/08 mmHg ">
+                    <div class="input-group-addon"> mmHg </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary add_pressao">OK</button>
+                </form>
+
+            </div>
+        </section> 
+
+        <section class="container-fluid row" id="Espaco_cadastro">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">
+                <table class="table table-striped">
+                    <caption> Histórico de aferições: </caption>
+                    <thead>
+                        <tr>
+                            <th>Data e hora</th>
+                            <th>Aferição</th>
+                        </tr>              
+                    </thead>
+
+                    <tbody id="tabelaPressao">
+                        <tr class="Pressao">
+                            <td class="tdData"> 10/06/2019 09:30</td>        
+                            <td class="tdPressao"> 12/08 mmHg</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>    
+        </section>
+        <script type="text/javascript" src="..\Bootstrap\jquery\jquery-3.4.1.js"> </script>
+        <script type="text/javascript" src="..\Bootstrap\bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\js\bootstrap.min.js"> </script>
+        <script type="text/javascript" src="..\js\PressaoPrincipal.js"></script>
+        <script type="text/javascript"src="..\js\PressaoInsere.js"></script>
+        <script type="text/javascript"src="..\js\PressaoValidaCampos.js"></script>
+
+    </body>
+
+</html>

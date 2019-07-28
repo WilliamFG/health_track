@@ -1,0 +1,57 @@
+html,
+body {
+
+    height: 100 %;
+}
+
+
+
+
+
+#Espaco_cadastro {
+
+    margin-top: 10px;
+}
+
+.Grupo_panel {
+
+    width: 50%;
+    display: inline-block;
+}
+
+.Grupo_btn_login {
+
+    width: 30%;
+    display: inline-block;
+
+}
+
+.Grupo_link_cadastro {
+
+    width: 70%;
+    display: inline-block;
+}
+
+.Grupo_dt_peso {
+
+    width: 70%;
+    display: inline-block;
+}
+
+.Grupo_btn_peso_ok {
+
+    width: 30%;
+    display: inline-block;
+}
+
+.Imagem_fundo {
+
+    background-image: url(fundo.jpg);
+}
+
+.posicao_pagina {
+
+    position: absolute; 
+    left: 70%;
+    transform: translateY(5%);
+}

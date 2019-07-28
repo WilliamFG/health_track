@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>Aplicativo health track fiap</title>
+        <meta charset="utf-8">   
+        <!-- guarda o formato de caracteres utf-8 universal-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--responsividade, controla a exibição em dispositivos com telas diferentes-->
+
+        <meta http-equiv="refresh" content="180">
+        <!--tempo para recarregar a página automáticamente, está com 180 segundos-->  
+
+        <meta name="keywords" content="emagrecimento, peso, alimentação">
+        <!--palavas chave para google e buscadores-->
+
+        <!--<script type="text/javascript" src="../js/scripts.js"> </script>-->
+        <!--arquivo JS separado, boas práticas SEO-->
+        
+        <link rel="stylesheet" type="text/css" href="..\Bootstrap\bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/Estilos.css">
+
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <H1 class ="text-center">Health track</H1>
+                <h4 class ="text-center"> O seu amigo no controle de peso</h4> 
+            </div>
+        </div>   
+
+        <section class="container-fluid row">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">
+                <nav class="navbar navbar-inverse">
+                    <div class="navbar-header" >
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Cadastro <span class="sr-only">(current)</span></a></li>
+                            <li><a href="Peso.html">Peso <span class="sr-only"></span></a></li>
+                            <li><a href="Alimentacao.html">Alimentação <span class="sr-only"></span></a></li>
+                            <li><a href="AtividadeFisica.html">Atividade Física <span class="sr-only"></span></a></li>
+                            <li><a href="PressaoArterial.html">Pressão arterial  <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+                </nav>       
+            </div>
+        </section>   
+
+        <section class="row"> 
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="container-fluid col-sm-10 col-md-8">
+             <div class="panel-body">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <H4 class= "panel-title" >Conte mais sobre você</H4>
+                    </div>     
+
+                    <div class="panel-body"> 
+                        <div class="input-group">                               
+                            <span class="input-group-addon" id="form_Nome" >Nome:</span>
+                            <input type="text" class="form-control" id="form_Nome" placeholder="Ex.:Joaquim Teixeira">
+                        </span> 
+                    </div>
+
+                    <div class="input-group" id="Espaco_cadastro">                               
+                        <span class="input-group-addon" id="form_Email">E-mail:</span>
+                        <input type="email" class="form-control" id="form_Email" placeholder="name@example.com">
+                    </div>
+
+                    <div>
+                        <label id="Espaco_cadastro"> Sexo: 
+
+                            <div class="radio">
+                                <label>   
+                                    <input type="radio" name="tipo_sexo"> Masculino
+                                </label> 
+                            </div>
+
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="tipo_sexo"> Feminino
+                                </label>       
+                            </div>
+                        </label>    
+                    </div>                                    
+
+                    <div class="input-group" id="Espaco_cadastro">                                
+                        <span class="input-group-addon" id="form_Data_Nasc">Nascimento:</span>
+                        <input type="date" class="form-control" id="form_Data_Nasc">
+                    </div>
+
+                    <div class="input-group" id="Espaco_cadastro">                                    
+                        <span class="input-group-addon" id="form_Altura">Altura:</span>
+                        <input type="text" class="form-control" id="form_Altura" placeholder="Ex.: 168 cm">
+                    </div>
+
+
+                    <div class="input-group" id="Espaco_cadastro">
+                        <span class="input-group-addon" id="inputPassword">Senha:</span>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="entre com a senha">
+                    </div>
+
+                    <div class="input-group" id="Espaco_cadastro">
+                        <span class="input-group-addon" id="inputPassword2">Repita a senha:</span>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="confirmação de senha">
+                    </div>
+
+                    <div id="Espaco_cadastro">
+                        <button type="submit" class="btn btn-primary"> <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Finalizar cadastro </button> </form>
+                    </div>
+
+                </div> 
+            </div> 
+        </section>     
+        <script type="text/javascript" src="..\Bootstrap\jquery\jquery-3.4.1.js"> </script>
+        <script type="text/javascript" src="..\Bootstrap\bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\js\bootstrap.min.js"> </script>
+        <script type="text/javascript" src="..\js\scriptsHealthTrack.js"></script>
+    </body>
+
+</html>

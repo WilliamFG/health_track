@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>Aplicativo health track fiap</title>
+        <meta charset="utf-8">   
+        <!-- guarda o formato de caracteres utf-8 universal-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--responsividade, controla a exibição em dispositivos com telas diferentes-->
+
+        <meta http-equiv="refresh" content="180">
+        <!--tempo para recarregar a página automáticamente, está com 180 segundos-->  
+
+        <meta name="keywords" content="emagrecimento, peso, alimentção">
+        <!--palavas chave para google e buscadores-->
+
+        <!--<script type="text/javascript" src="../js/scripts.js"> </script>-->
+        <!--arquivo JS separado, boas práticas SEO-->
+        
+        <link rel="stylesheet" type="text/css" href="..\Bootstrap\bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\css\bootstrap.min.css">
+
+    </head>
+
+    <body>
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <H1 class ="text-center">Health track</H1>
+                <h4 class ="text-center"> O seu amigo no controle de peso</h4> 
+            </div>
+        </div>    
+
+        <section class="container-fluid row">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">
+                <nav class="navbar navbar-inverse">
+                    <div class="navbar-header">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Cadastro.html">Cadastro <span class="sr-only"></span></a></li>
+                            <li><a href="Peso.html">Peso <span class="sr-only"></span></a></li>
+                            <li class="active"><a href="#">Alimentação <span class="sr-only">(current)</span></a></li>
+                            <li><a href="AtividadeFisica.html">Atividade física <span class="sr-only"></span></a></li>
+                            <li><a href="PressaoArterial.html">Pressão arterial  <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>            
+        </section>
+
+        <section class="container-fluid row">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8"> 
+                <label> Alimentação: </label> 
+                <form class="form-inline" id="formAdicionaAlimentacao">
+
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="datetime-local" name="dt_alimentacao" class="form-control">
+                      </div>    
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="nr_Alimentacao" id="Inserir_alimentacao" placeholder= "Descreva sua Alimentação">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary add_alimentacao">OK</button>
+
+                </form>
+            </div>    
+        </section> 
+
+        <section class="container-fluid row" id="Espaco_cadastro">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">
+                <table class="table table-striped">
+                    <caption> Histórico de alimentação: </caption>
+                    <thead>
+                        <tr>
+                            <th>Data e hora</th>
+                            <th>Alimento</th>
+                      
+                        </tr>              
+                    </thead>
+
+                    <tbody id="tabelaAlimentacao">
+
+                        <tr class="Alimentacao">
+                            <td class="tdData" > 10/06/2019 09:30</td>        
+                            <td class="tdAlimentacao" > 100g pão francês, 1 copo de leite</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>    
+        </section>
+
+        <script type="text/javascript" src="..\Bootstrap\jquery\jquery-3.4.1.js"> </script>
+        <script type="text/javascript" src="..\Bootstrap\bootstrap-3.3.7-dist\bootstrap-3.3.7-dist\js\bootstrap.min.js"> </script>
+        <script type="text/javascript" src="..\js\AlimentacaoPrincipal.js"></script>
+        <script type="text/javascript"src="..\js\AlimentacaoInsere.js"></script>
+        <script type="text/javascript"src="..\js\AlimentacaoValidaCampos.js"></script>
+
+
+    </body>
+
+</html>
